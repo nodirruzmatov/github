@@ -9,6 +9,8 @@ import UserContext from './useContext/useContext'
 
 function App() {
 
+  const [aa, setAA] =useState()
+
   
 
   const [result, setResult] = useState([])
@@ -58,13 +60,10 @@ function App() {
 
   return <>
 
-    <UserContext.Provider value={{result}}>
-      {(log ==="/login") ? "" : <Header search={srcGit}/>}
-      <Routes>
-        
-        <Route path='/' element={<Main />} />
-        <Route path="/login" element={<Login  setLog={setLog} auth={auth} useAuth={useAuth} />} />
-      </Routes> 
+    <UserContext.Provider value={{result, aa}}>
+      {(log ==="/login") ? "" : <Header search={srcGit} setAA={setAA}/>}
+      
+      <Main setLog={setLog} auth={auth} useAuth={useAuth} log={log}/>
 
       {(log ==="/login") ? "" : <Footer />}
 

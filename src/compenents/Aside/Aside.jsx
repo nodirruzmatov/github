@@ -1,9 +1,8 @@
-import React, { useState, createContext, useContext } from 'react';
+import React, { useContext } from 'react';
 import UserContext from '../../useContext/useContext';
 
 const Aside = (uesr) => {
   const {result} = useContext(UserContext);
-  console.log(result);
 
   return (
     <>
@@ -22,7 +21,11 @@ const Aside = (uesr) => {
             <button className=' w-full text-center py-[5px] px-4 border-[1px] border-[#1b1f2426] rounded-md bg-[#f6f8fa]'>Edit Profile</button>
           </div>
 
-          <div className=""></div>
+          <div className="">
+            <button>{result.followers} followers</button>
+          </div>
+
+
           
 
         </div>

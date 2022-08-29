@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import logo from '../../assets/images/logo.jpg'
 import Navbar from '../Navbar/Navbar';
 
-const Header = ({search}) => {
+const Header = ({search, setAA}) => {
 
 
   const [searchTxt, setSearchTxt] = useState("")
@@ -19,7 +19,8 @@ const Header = ({search}) => {
          value={searchTxt} 
          onChange={(e)=>setSearchTxt(e.target.value)} />
 
-         <button className=' mr-4 text-white' onClick={()=>search(searchTxt)}>Searcch</button>
+         <button className=' mr-4 text-white' 
+         onClick={()=>{search(searchTxt); setAA(searchTxt)}}>Searcch</button>
 
          <Navbar />
 
