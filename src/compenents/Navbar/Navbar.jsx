@@ -6,8 +6,8 @@ const Navbar = () => {
     <>
       <nav className='navbar'>
         
-        <ul className='nav_list flex items-center'>
-          <li className="navitem mr-4 text-white text-[14px] hover:text-slate-300 " >
+        <ul className='nav_list flex items-center w-full'>
+          <li className="navitem w-full mr-4 text-white text-[14px] hover:text-slate-300 " >
             <a>Pull requests</a>
           </li>
           <li className="navitem mr-4 text-white text-[14px] hover:text-slate-300 " >

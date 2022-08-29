@@ -12,8 +12,8 @@ const Aside = (uesr) => {
 
   return (
     <>
-      <aside className='aside'>
-        <div className=' max-w-[296px]'>
+      <aside className='aside max-w-[296px] w-full'>
+        <div className='  w-full'>
 
           <img className=' rounded-[50%]' src={result.avatar_url} alt="" />
 

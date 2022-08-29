@@ -1,10 +1,9 @@
 import { useState, useEffect,} from 'react'
-import { Route, Routes, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import Get from './Api/Get'
 import Header from './compenents/Header/Header'
 import Footer from './compenents/Fotter/Footer'
 import Main from './compenents/Main/Main'
-import Login from './compenents/Login/Login'
 import UserContext from './useContext/useContext'
 
 function App() {

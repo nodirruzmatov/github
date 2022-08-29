@@ -49,7 +49,7 @@ const Overview = () => {
                     <h3 className=' text-[14px] leading-[1.5] text-[#0969da] font-[600]'>{e.name}</h3>
                     <p className=' px-[7px] border-[1px] border-[#d0d7de] rounded-xl text-[14px] leading-[18px] text-[#57606a] font-[500]'>{e.visibility}</p>
                   </div>
-                  <p className=' mt-2 mb-4 text-[12px] text-[#57606a] leading-[1.5]' >{e.svn_url}</p>
+                  <p className=' mt-2 mb-4 text-[12px] text-[#57606a] leading-[1.5] whitespace-normal' >{e.svn_url}</p>
                   <p className='text-[12px] text-[#57606a] leading-[1.5]'>{e.language}</p>
                 </a>
                 

@@ -5,6 +5,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom'
 import Overview from '../Overview/Overview';
 import Followers from '../Followers/Followers';
 import Following from '../Following/Following';
+import Repositories from '../Repositories/Repositories';
 
 import Login from '../Login/Login';
 
@@ -21,6 +22,7 @@ const Main = ({setLog,auth,useAuth,log}) => {
           <Route path="/" element={<Overview />} />
           <Route path="/followers" element={<Followers />} />
           <Route path="/following" element={<Following />} />
+          <Route path="/repositories" element={<Repositories />} />
           
         </Routes> 
 

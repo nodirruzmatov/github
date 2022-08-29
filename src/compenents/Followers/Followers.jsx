@@ -33,7 +33,6 @@ const Followers = () => {
     srcGit(aa)
   },[aa])
 
-  console.log(over);
 
   return (
     <>
